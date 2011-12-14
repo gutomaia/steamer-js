@@ -26,3 +26,12 @@ assert.equal("Kill a Spitter before she is able to spit.", achievement.descripti
 assert.notEqual(null, achievement.timestamp);
 assert.equal(1292701736000, achievement.timestamp);
 
+achievement = achievements[1];
+
+assert.equal("http://media.steampowered.com/steamcommunity/public/images/apps/550/b1b772b233b812fd410aee1f175f8b1cb4fe4e43.jpg", achievement.iconClosed);
+assert.equal("http://media.steampowered.com/steamcommunity/public/images/apps/550/1921292f1593086aa0dc7d29124e4c0c1119e084.jpg", achievement.iconOpen);
+assert.equal("CRASS MENAGERIE", achievement.name);
+assert.equal("ach_kill_every_uncommon_infected", achievement.apiname);
+assert.equal("Kill one of each Uncommon Infected.", achievement.description);
+assert.equal(1292451219000, achievement.timestamp);
+

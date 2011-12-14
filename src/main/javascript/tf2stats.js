@@ -42,7 +42,15 @@ StatsClient.prototype.getAchievements = function (){
         "timestamp":1292701736000
     }
     achievements.push(a1);
-    
+    var a2 = {
+        "iconClosed": "http://media.steampowered.com/steamcommunity/public/images/apps/550/b1b772b233b812fd410aee1f175f8b1cb4fe4e43.jpg",
+        "iconOpen": "http://media.steampowered.com/steamcommunity/public/images/apps/550/1921292f1593086aa0dc7d29124e4c0c1119e084.jpg",
+        "name": "CRASS MENAGERIE",
+        "apiname": "ach_kill_every_uncommon_infected",
+        "description": "Kill one of each Uncommon Infected.",
+        "timestamp": 1292451219000
+    }
+    achievements.push(a2);
     for (var i = achievements.length; i < 67; i++)
         achievements.push({});
     return achievements;
