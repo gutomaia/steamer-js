@@ -15,3 +15,4 @@ var stats = statsClient.getStats('gutomaia', 'portal2', tf2status_xml);
 
 assert.equal(3, stats.visibilityState);
 assert.equal("Portal2", stats.gameFriendlyName);
+assert.equal("Portal 2", stats.gameName);

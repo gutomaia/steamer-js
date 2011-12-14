@@ -15,6 +15,7 @@ StatsClient.prototype.getStats = function (username, game, xml) {
         };
     if (game == 'portal2'){
         stats.gameFriendlyName = "Portal2";
+        stats.gameName = "Portal 2";
     }
     return stats;
 }
