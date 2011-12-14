@@ -16,3 +16,9 @@ var stats = statsClient.getStats('gutomaia', 'l4d2', tf2status_xml);
 assert.equal(3, stats.visibilityState);
 assert.equal("L4D2", stats.gameFriendlyName);
 assert.equal("Left 4 Dead 2", stats.gameName);
+assert.equal("http://store.steampowered.com/app/550", stats.gameLink);
+assert.equal("http://media.steampowered.com/steamcommunity/public/images/apps/550/7d5a243f9500d2f8467312822f8af2a2928777ed.jpg", stats.gameIcon);
+assert.equal("http://media.steampowered.com/steamcommunity/public/images/apps/550/205863cc21e751a576d6fff851984b3170684142.jpg", stats.logo);
+assert.equal("http://media.steampowered.com/steamcommunity/public/images/apps/550/205863cc21e751a576d6fff851984b3170684142_thumb.jpg", stats.logoSmall),
+assert.equal(76561197985077150, stats.steamID64);
+assert.equal("gutomaia", stats.playerCustomURL);
