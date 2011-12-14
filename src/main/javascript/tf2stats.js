@@ -34,11 +34,12 @@ StatsClient.prototype.getStats = function (username, game, xml) {
 StatsClient.prototype.getAchievements = function (){
     var achievements = [];
     var a1 = {
-        "iconClosed": "http://media.steampowered.com/steamcommunity/public/images/apps/550/8d94a8ffcb20fd11de547a6972bcef319fd93bf6.jpg"
+        "iconClosed": "http://media.steampowered.com/steamcommunity/public/images/apps/550/8d94a8ffcb20fd11de547a6972bcef319fd93bf6.jpg",
+        "iconOpen": "http://media.steampowered.com/steamcommunity/public/images/apps/550/19c4af0f9bb24b719a086cbd3b63961d8348bf2b.jpg",
+        "name": "ACID REFLEX"
     }
     achievements.push(a1);
-    for (var i = achievements.length; i < 67; i++){
+    for (var i = achievements.length; i < 67; i++)
         achievements.push({});
-    }
     return achievements;
 }
