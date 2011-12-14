@@ -22,6 +22,7 @@ StatsClient.prototype.getStats = function (username, game, xml) {
         stats.logoSmall = "http://media.steampowered.com/steamcommunity/public/images/apps/620/d2a1119ddc202fab81d9b87048f495cbd6377502_thumb.jpg";
     } else if (game == 'l4d2') {
         stats.gameFriendlyName = "L4D2";
+        stats.gameName = "Left 4 Dead 2";
     }
     return stats;
 }

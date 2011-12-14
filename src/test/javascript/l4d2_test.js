@@ -15,3 +15,4 @@ var stats = statsClient.getStats('gutomaia', 'l4d2', tf2status_xml);
 
 assert.equal(3, stats.visibilityState);
 assert.equal("L4D2", stats.gameFriendlyName);
+assert.equal("Left 4 Dead 2", stats.gameName);
