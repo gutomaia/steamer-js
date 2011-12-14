@@ -1,8 +1,8 @@
 function StatsClient(){
 }
 
-StatsClient.prototype.getStats = function () {
-    return {
+StatsClient.prototype.getStats = function (username, game, xml) {
+    var stats = {
         "visibilityState":3,
         "gameFriendlyName":"TF2",
         "gameName":"Team Fortress 2",
@@ -13,4 +13,8 @@ StatsClient.prototype.getStats = function () {
         "steamID64":76561197985077150,
         "playerCustomURL":"gutomaia"
         };
+    if (game == 'portal2'){
+        stats.gameFriendlyName = "Portal2";
+    }
+    return stats;
 }
