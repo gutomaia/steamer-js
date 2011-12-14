@@ -14,4 +14,4 @@ var statsClient = new StatsClient();
 var stats = statsClient.getStats('gutomaia', 'tf2', tf2status_xml);
 
 assert.equal(3, stats.visibilityState);
-
+assert.equal("TF2", stats.gameName);
