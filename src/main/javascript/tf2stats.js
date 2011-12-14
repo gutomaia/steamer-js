@@ -32,5 +32,13 @@ StatsClient.prototype.getStats = function (username, game, xml) {
 }
 
 StatsClient.prototype.getAchievements = function (){
-    return {};
+    var achievements = [];
+    var a1 = {
+        "iconClosed": "http://media.steampowered.com/steamcommunity/public/images/apps/550/8d94a8ffcb20fd11de547a6972bcef319fd93bf6.jpg"
+    }
+    achievements.push(a1);
+    for (var i = achievements.length; i < 67; i++){
+        achievements.push({});
+    }
+    return achievements;
 }
