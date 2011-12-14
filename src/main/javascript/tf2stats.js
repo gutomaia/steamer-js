@@ -31,4 +31,6 @@ StatsClient.prototype.getStats = function (username, game, xml) {
     return stats;
 }
 
-StatsClient.prototype.getAchievements = function (){}
+StatsClient.prototype.getAchievements = function (){
+    return {};
+}
