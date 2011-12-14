@@ -16,6 +16,10 @@ StatsClient.prototype.getStats = function (username, game, xml) {
     if (game == 'portal2'){
         stats.gameFriendlyName = "Portal2";
         stats.gameName = "Portal 2";
+        stats.gameLink = "http://store.steampowered.com/app/620";
+        stats.gameIcon = "http://media.steampowered.com/steamcommunity/public/images/apps/620/2e478fc6874d06ae5baf0d147f6f21203291aa02.jpg";
+        stats.logo = "http://media.steampowered.com/steamcommunity/public/images/apps/620/d2a1119ddc202fab81d9b87048f495cbd6377502.jpg";
+        stats.logoSmall = "http://media.steampowered.com/steamcommunity/public/images/apps/620/d2a1119ddc202fab81d9b87048f495cbd6377502_thumb.jpg";
     }
     return stats;
 }
