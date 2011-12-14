@@ -51,6 +51,22 @@ StatsClient.prototype.getAchievements = function (){
         "timestamp": 1292451219000
     }
     achievements.push(a2);
+    var a3 = {
+        "iconClosed": "http://media.steampowered.com/steamcommunity/public/images/apps/550/b65a6518c0680448e996e2190d1ed6b00ad14935.jpg",
+        "iconOpen": "http://media.steampowered.com/steamcommunity/public/images/apps/550/95bb3011848b129b4b7483017a970700a0a22bd1.jpg",
+        "name": "A RIDE DENIED",
+        "apiname": "ach_save_player_from_jockey_fast",
+        "description": "Kill a Jockey within 2 seconds of it jumping on a Survivor."
+    }
+    achievements.push(a3);
+    var a4 = {
+        "iconClosed": "http://media.steampowered.com/steamcommunity/public/images/apps/550/4eb2b093ce1dd442da4a62c9a0659602fbfc0d1e.jpg",
+        "iconOpen": "http://media.steampowered.com/steamcommunity/public/images/apps/550/4fc103dcb52ccc748b5bdea66924d1bf5c9e0705.jpg",
+        "name": "ARMORY OF ONE",
+        "apiname": "ach_deploy_ammo_upgrade",
+        "description": "Deploy an ammo upgrade and have your team use it."
+    }
+    achievements.push(a4);
     for (var i = achievements.length; i < 67; i++)
         achievements.push({});
     return achievements;
