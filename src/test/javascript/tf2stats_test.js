@@ -14,4 +14,6 @@ var statsClient = new StatsClient();
 var stats = statsClient.getStats('gutomaia', 'tf2', tf2status_xml);
 
 assert.equal(3, stats.visibilityState);
-assert.equal("TF2", stats.gameName);
+assert.equal("TF2", stats.gameFriendlyName);
+assert.equal("Team Fortress 2", stats.gameName);
+assert.equal("http://store.steampowered.com/app/440", stats.gameLink);
