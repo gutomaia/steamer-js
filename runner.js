@@ -1,5 +1,5 @@
 try {
-    var reporter = require('nodeunit').reporters.default;
+    var reporter = require('nodeunit').reporters.minimal;
 } catch(e) {
     console.log("Cannot find nodeunit module.");
     process.exit();
