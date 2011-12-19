@@ -5,13 +5,13 @@ var assert = require('assert');
 
 var stats_function = fs.readFileSync(__dirname + '/../src/stats.js', 'utf8');
 
-eval(stats_function); //TODO need to change the filename
+eval(stats_function);
 
-var tf2status_xml = fs.readFileSync(__dirname + '/../fixtures/gutomaia-portal2.xml');
+var portal2_xml = fs.readFileSync(__dirname + '/../fixtures/gutomaia-portal2.xml');
 
 var statsClient = new StatsClient();
 
-var stats = statsClient.getStats('gutomaia', 'portal2', tf2status_xml);
+var stats = statsClient.getStats('gutomaia', 'portal2', portal2_xml);
 
 exports.testVisibilityState = function(test){
     test.equal(3, stats.visibilityState);
