@@ -3,9 +3,9 @@ var sys = require('util');
 
 var assert = require('assert');
 
-var tf2status_function = fs.readFileSync(__dirname + '/../src/tf2stats.js', 'utf8');
+var stats_function = fs.readFileSync(__dirname + '/../src/stats.js', 'utf8');
 
-eval(tf2status_function);
+eval(stats_function);
 
 var tf2status_xml = fs.readFileSync(__dirname + '/../fixtures/gutomaia-tf2.xml');
 
